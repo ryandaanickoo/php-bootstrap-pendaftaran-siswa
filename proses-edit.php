@@ -7,13 +7,12 @@
         // ambil data dari formulir
         $id = $_POST['id'];
         $nama = $_POST['nama'];
-        $alamat = $_POST['alamat'];
-        $jk = $_POST['jenis_kelamin'];
-        $agama = $_POST['agama'];
-        $sekolah = $_POST['sekolah_asal'];
+        $merek = $_POST['merek'];
+        $jumlah = $_POST['jumlah'];
+        $kondisi = $_POST['kondisi'];
 
         // buat query update
-        $sql = "UPDATE calon_siswa SET nama='$nama', alamat='$alamat', jenis_kelamin='$jk', agama='$agama', sekolah_asal='$sekolah' WHERE id=$id";
+        $sql = "UPDATE barang SET nama='$nama', merek='$merek', jumlah='$jumlah', kondisi='$kondisi' WHERE id=$id";
         $query = mysqli_query($db, $sql);
     
         // apakah query update berhasil?
